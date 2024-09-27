@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a4f8059f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Anuj_logo_New.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Anuj</span> Gangane</h1>
+                <p>Computer Science Engineer</p>
+            </div>
+        </div>
+    </div>
+    <!------------------------------- about -------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-columm-1">
+                    <img src="Images/Anuj_About.jpg" alt="">
+                </div>
+                <div class="about-columm-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p class="about-info">A Recent Computer Science Engineer recent a B.Tech from D.Y. Patil College of Engineering and Technology Kolhapur. I specialize in Full stack development and have experience building impactful software solutions like an Automated Code Review Tool and a C-CURE. I possess strong analytical skills, cloud expertise with AWS and Google Cloud. Looking for opportunities to apply my technical skills in a challenging role and contribute to innovative projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>C, C++, HTML, CSS, JavaScript, Python.</li>
+                            <li><span>Soft Skills</span><br>Time Management, Teamwork, Adaptability, Punctual, Friendly.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2024 - Current
+                            </span><br>Full stack DotNet Developer at Cravita Technology.</li>
+                            <li><span>June, 2022 - July, 2022
+                            </span><br>Python Developer at Comtrance Technology.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.Tech from D.Y.Patil College of Engineering and Technology, Kolhapur.</li>
+                            <li><span>2018-2020</span><br>Higher Secondary Education at Yashawantrao Chavan Institute of Science, Satara.</li>
+                            <li><span>2018</span><br>Secondary School Certificate at Gopalrao Dev Prashala, Malshiras.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- Certificates -------------------->
+
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="certificates-list">
+                <div>
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <h2>Data Analytics Virtual Internship by AICTE</h2>
+                    <p>Data Analytics Virtual Internship offered by AICTE, gaining skills in data processing, analysis, and visualization. Reflects his hands-on experience in applying key data analytics techniques.</p>
+                    <a href="Certificates/Data Analytics Virtual Internship_AICTE.pdf">View</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <h2>Forage Data Analytics and Visualization Job Simulation</h2>
+                    <p>The Data Analytics and Visualization Job Simulation offered by Forage in January 2024. The program covered practical skills in project understanding, data cleaning, modeling, visualization, and client presentation.</p>
+                    <a href="Certificates/Accenture_By_Forage.pdf">View</a>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <h2>AWS Cloud Masterclass - Discovery Day</h2>
+                    <p>AWS Cloud Masterclass - Discovery Day on March 3, 2022. The event provided foundational insights into AWS cloud technologies and services.</p>
+                    <a href="Certificates/AWS Cloud Masterclass.pdf">View</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- Projects -------------------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Automated Code Review Tool.jpg" >
+                    <div class="layer">
+                        <h3>Automated Code Review Tool</h3>
+                        <p>This tool 
+                            streamline the process by identifying coding issues, bugs, and style violations, ensuring consistent 
+                            code quality. These tools enable early issue detection, promoting efficient problem- solving in the 
+                            development phase. </p>
+                            <a href="https://github.com/AnujGangane/Automated-Code-Review-Tool"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Voice Base Email System.jpg" >
+                    <div class="layer">
+                        <h3>Voice Base Email System</h3>
+                        <p>Web application which 
+                            will helps the people to send emails efficiently. This system is specially helpful 
+                            for computer illiterate people and blind people to access there emails. </p>
+                            <a href="https://github.com/AnujGangane/Voice-base-Email-System"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/C-CURE.jpg" >
+                    <div class="layer">
+                        <h3>Covid Cure</h3>
+                        <p>The application 
+                            which will maintain the record of vaccine and make slots available to the users. 
+                            There is also need to check the infection rate of this infection through some 
+                            basic questions. </p>
+                            <a href="https://github.com/AnujGangane/C-CURE"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------- Contact -------------------------------------------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:anujgangane9812@gmail.com">anujgangane9812@gmail.com</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i><a href="tel:7219198262">7219198262</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/anya_.10._/"><i class="fa-brands fa-square-instagram"></i></i></a>
+                        <a href="https://github.com/AnujGangane"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://x.com/Anya_10_"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/anujgangane/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <a href="Certificates/Anuj_Gangane_Resume.pdf" download="" class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="far fa-copyright"></i> Anuj Gangane. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html> 
